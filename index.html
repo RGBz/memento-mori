@@ -3,11 +3,25 @@
 <head>
   <title>Hourglass</title>
   <style>
-  body { font-family: monospace; text-align: center; font-size: 2em; }
+  body { font-family: monospace; text-align: center; font-size: 1.5em; }
+  input {
+    background: #efefef;
+    border: none;
+    font-family: monospace;
+    border-radius: 1em;
+    line-height: 2em;
+    padding: 0;
+    width: 15em;
+    font-size: 1em;
+    vertical-align: center;
+    text-align: center;
+  }
   </style>
 </head>
 <body>
-  <div id="dashboard"></div>
+  <input id="birthdate" value="1985-10-08" onchange="refresh" />
+  <div id="hourglass"></div>
+  <input id="deathdate" value="2065-10-08" onchange="refresh" />
   <script src="index.js"></script>
 </body>
 </html>
