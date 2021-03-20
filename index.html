@@ -3,12 +3,28 @@
 <head>
   <title>memento mori</title>
   <style>
-  body { font-family: monospace; text-align: center; font-size: 1.5em; }
+  html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: monospace;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #333;
+    color: #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   input {
-    background: #efefef;
+    background: #888;
+    color: #333;
     border: none;
     font-family: monospace;
-    border-radius: 1em;
+    border-radius: 3px;
     line-height: 2em;
     padding: 0;
     width: 15em;
